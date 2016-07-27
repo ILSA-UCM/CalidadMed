@@ -1,0 +1,292 @@
+/*Nuestrso estilos*/
+
+/*Me dice si un atributo es solo de lectura*/
+/*.readOnly {
+	background-color:#F2F2F2; 
+	color:#A4A4A4;
+}*/
+
+body{
+	padding-top: 3%; /* Relleno superior igual a la altura de la cabecera*/
+    height: 100%;
+}
+
+/*Para el pie de pagina*/
+#main-footer {
+	background: #333;
+	color: white;
+	text-align: center;
+	padding: 20px;
+	/*margin-top: 40px;
+	margin:0 auto;*/
+}
+/*Fin del pie de pagina*/
+
+
+/*Para quitar los bordes de la tabla en las filas*/
+.table-borderless tbody tr td, .table-borderless tbody tr th{
+    border: none;
+}
+
+
+/*Para el icono, jugar con esto, tener en cuenta esto por si se usa en otra parte*/
+.glyphicon-info-sign:hover, .glyphicon-minus-sign:hover, .ec_css:hover {
+	transform: rotate(360deg) scale(1.3,1.3);
+    -webkit-transform: rotate(360deg) scale(1.3,1.3); /* Safari & Chrome */
+    -o-transform: rotate(360deg) scale(1.3,1.3); /* Opera */ 
+    -moz-transform: rotate(360deg) scale(1.3,1.3); /* Old firefox */
+
+    transition: 500ms;  
+    -webkit-transition: 500ms; /* Safari & Chrome */
+    -o-transition: 500ms; /* Opera */ 
+    -moz-transition: 500ms; /* Old firefox */
+
+    /*background-color: #7401DF; */
+    /*border: 7px solid #fff;*/
+}
+
+
+.hiddenStepInfo {
+    display: none;
+}
+
+.activeStepInfo {
+    display: block !important;
+}
+
+.underline {
+    text-decoration: underline;
+}
+
+.step {
+    margin-top: 27px;
+    text-align: center;
+
+    /*margin: 20px auto;  
+    height: 400px; 
+    width: 50%*/
+}    
+
+.step .col-md-2 {
+    /*background-color: #fff;
+    border: 1px solid #C0C0C0;
+    border-right: none;*/
+
+    /*Estos valores son los que se pone para el tamaño de cada circulo del menú*/ 
+    width: 100px;
+    height: 100px;
+    overflow: hidden;
+    position: relative;
+    float: left;
+    /*background: #222;*/
+    background: #0B0B61;
+    margin-right: 4px;
+    border-radius: 110px; 
+
+    transition: 500ms; 
+    -webkit-transition: 500ms; /* Safari & Chrome */
+    -o-transition: 500ms; /* Opera */ 
+    -moz-transition: 500ms; /* Old firefox */
+}
+
+.step .col-md-2 p{
+    margin-top: 50%; /*para que salga un poco mas abajo */
+    color: #fff;
+    text-align: center; 
+    text-decoration: none; 
+}
+
+
+
+.step .col-md-2:hover {
+
+    /*transform: rotate(360deg) scale(1.3,1.3);
+    -webkit-transform: rotate(360deg) scale(1.3,1.3); /* Safari & Chrome */
+    /*-o-transform: rotate(360deg) scale(1.3,1.3); /* Opera */ 
+    /*-moz-transform: rotate(360deg) scale(1.3,1.3); /* Old firefox */
+
+    /*transition: 500ms;  
+    -webkit-transition: 500ms; /* Safari & Chrome */
+    /*-o-transition: 500ms; /* Opera */ 
+    /*-moz-transition: 500ms; /* Old firefox */
+
+    background-color: #7401DF; 
+    /*border: 7px solid #fff; */
+}
+
+.step .activestep {
+    /*color: #F58723;
+    height: 100px;
+    margin-top: -7px;
+    padding-top: 7px;
+    border-left: 6px solid #5CB85C !important;
+    border-right: 6px solid #5CB85C !important;
+    border-top: 3px solid #5CB85C !important;
+    border-bottom: 3px solid #5CB85C !important;
+    vertical-align: central;*/
+
+
+    /*Estos valores son los que se pone para el tamaño de cada circulo del menu*/ 
+    width: 100px;
+    height: 100px;
+    overflow: hidden;
+    position: relative;
+    float: left;
+    background: #6E6E6E;
+    margin-right: 4px;
+    border-radius: 110px; 
+
+    transition: 500ms; 
+    -webkit-transition: 500ms; /* Safari & Chrome */
+    -o-transition: 500ms; /* Opera */ 
+    -moz-transition: 500ms; /* Old firefox */
+}
+
+.justificar{
+    text-align: justify;
+}
+
+.barStado{
+    margin-top: 1%;
+    /*position: fixed;*/
+    background-color: #CED8F6;
+    width: 88%;
+    padding-top: 0.30%;
+}
+
+#progress{
+    margin-top: 0.95%;
+}
+
+.progress-bar{
+    color: #191010;
+    background-color: #0A63AF;
+    font-size: medium;
+    font-weight: bold;
+}
+
+/*Cambiar fondo de los iconos cuando esta el mouse encima*/
+.descargar:hover, .evaluar:hover, .guardar:hover, .annadir:hover, .eliminar:hover, .editar:hover, .ordItemsC{
+    color:#0F0F61;
+}
+
+/*scroll top*/
+.scrollup {
+    width: 40px;
+    height: 40px;
+    position: fixed;
+    bottom: 50px;
+    right: 4px;
+    display: none;
+    /*text-indent: -9999px;*/
+    margin: 0 0 40px 10px;
+    background: url('../img/scrolltop40_40.png') no-repeat;
+}
+
+.scrollup:hover {
+    background-color:#0F0F61;
+}
+
+.centrarTexto{
+    text-align: center;
+}
+
+/*para que se muestre a la derecha el bloque*/
+.right{
+    float: right;
+}
+
+.icon-add{
+    color: #2B48A1;
+    font-size: 40px;
+}
+
+a.btn.btn-primary.save-observacion {
+    display: block;
+    width: 150px;
+    margin: 0 auto;
+    position: relative;
+    top: -30px;
+}
+
+/***********************************************************************************/
+.rectangulo_menu{
+    margin-top: 17%;
+    margin-bottom: 17%;
+}
+
+.rectangulo {
+    width: 100%; 
+    height: 100px; 
+    border: 3px solid #555;
+    background: #428bca;
+    font-size: x-large;
+}
+
+.rectangulo:hover{
+    background-color: black;
+    color: white;
+    font-size: xx-large;
+}
+
+/*o el minimo 768px*/
+@media only screen and (min-width: 1024px){
+
+    .margen_izq{
+        padding-left: 20%;
+        padding-bottom: 2%;
+    }
+
+    .margen_dr{
+        padding-right: 20%;
+    }
+}
+
+@media only screen and (max-width: 1023px){
+
+    .rectangulo_menu {
+        margin-top: 20%;
+    }
+
+    .rectangulo {
+        margin-bottom: 6%;
+    }
+}
+
+.ordItemsC:hover {
+    color: #000;
+    font-size: x-large;
+}
+
+/*Paginadores*/
+.paginacion{
+    font-size: x-large;
+    font-weight: bold;
+}
+.paginacion a {
+    border: 10px;
+    text-decoration: none;
+}
+
+/*para el glosario*/
+.termino {
+    /*color: #0F0F61;*/
+    font-size: x-large;
+    font-weight: bold;
+}
+
+.ordenarCI > button.btn.btn-primary.btn-lg.right{
+    margin-top: 0.5%;
+    margin-right: 2%;
+    background-color: #2B48A1;
+}
+
+.ordenarCI > button.btn.btn-primary.btn-lg.right:hover{
+    background-color: #0F0F61;
+	
+	
+}
+
+.modalInfoEitem {
+    margin-top: 10%;
+}
